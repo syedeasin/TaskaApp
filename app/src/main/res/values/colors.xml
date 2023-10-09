@@ -7,6 +7,10 @@
     <color name="primary">#246BFD</color>
     <color name="secondary">#FFD300</color>
 
+    <!--    Greyscale Of Primary Color -->
+    <color name="primary_100">#E9F0FF</color>
+
+
 <!--    Greyscale -->
     <color name="greyscale_900">#212121</color>
     <color name="greyscale_800">#424242</color>
@@ -18,4 +22,10 @@
     <color name="greyscale_200">#EEEEEE</color>
     <color name="greyscale_100">#F5F5F5</color>
     <color name="greyscale_50">#FAFAFA</color>
+
+    <!--    Background   -->
+    <color name="blue_bg">#F6FAFD</color>
+    <color name="red_bg">#FFF5F5</color>
+    <color name="yellow_bg">#FFFEE0</color>
+    <color name="purple_bg">#FCF4FF</color>
 </resources>
