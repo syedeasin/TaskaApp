@@ -5,42 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:paddingLeft="24px"
+    android:paddingRight="24px"
+    android:paddingBottom="48px"
     tools:context=".Launcher_Screen">
-
-    <Button
-        android:id="@+id/skipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skip"
-        android:textColor="@color/black"
-        android:background="00000000"
-        android:textSize="20sp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/sliderViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginVertical="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/primary"
+        android:text="Next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/skipButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderViewPager" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:backgroundTint="@color/primary_100"
+        android:textColor="@color/primary"
+        />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/calander_icon"
-
-        app:layout_constraintBottom_toBottomOf="@+id/sliderViewPager"
-        app:layout_constraintEnd_toEndOf="@+id/sliderViewPager"
-        app:layout_constraintStart_toStartOf="@+id/sliderViewPager"
-        app:layout_constraintTop_toTopOf="@+id/sliderViewPager" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

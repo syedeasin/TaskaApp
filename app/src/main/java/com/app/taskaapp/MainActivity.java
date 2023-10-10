@@ -13,12 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        nameTextView = (TextView) findViewById(R.id.hello_name);
-        nameTextView.setText("No, My Wife Said, My Name Is Spondon");
-
-        wifeNameTextView = findViewById(R.id.wife_name);
-        wifeNameTextView.setText("Her Name Is: Khatune Rokaia Jannat");
     }
 
 
